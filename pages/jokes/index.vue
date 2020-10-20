@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="container-fluid">
     <Joke v-for="joke in jokes" :key="joke.id" index="2" :id="joke.id" :joke="joke.joke" />
 </div>
 </template>

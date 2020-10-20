@@ -7,11 +7,12 @@
     <div class="container h-100">
         <div class="d-flex h-100 text-center align-items-center">
             <div class="w-100 text-white">
-                <h1 class="display-3"> {{$route.params.id}}</h1>
+                <h1 class="text-muted"> {{$route.params.id}}</h1>
                 <p class="lead mb-0">
-                <p class="display-1">
+                <p class="text">
                     {{joke}}
                 </p>
+                <nuxt-link to="/jokes">back to jockes</nuxt-link>
                 </p>
             </div>
         </div>
@@ -52,7 +53,7 @@ export default {
 .videobg {
     position: relative;
     background-color: black;
-    height: 75vh;
+    height: 100vh;
     min-height: 25rem;
     width: 100%;
     overflow: hidden;
