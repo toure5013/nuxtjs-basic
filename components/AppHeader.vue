@@ -1,21 +1,29 @@
 <template lang="fr">
-<nav class="navbar navbar-expand-sm  navbar-dark bg-warning">
-    <a class="navbar-brand" href="#">
-        <Logo style="height:5vh" />
-    </a>
-    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
-    <div class="collapse navbar-collapse float-right" id="collapsibleNavId">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active ">
-                <Nuxt-link class="nav-link active" to="/">Home<span class="sr-only">(current)</span></Nuxt-link>
-            </li>
-            <li class="nav-item ">
-                <Nuxt-link class="nav-link active" to="/about"> About</Nuxt-link>
-            </li>
-            <li class="nav-item ">
-                <Nuxt-link class="nav-link active" to="/jokes"> Jokes</Nuxt-link>
-            </li>
-        </ul>
+<nav class="navbar navbar-expand-lg navbar-dark bg-warning">
+    <div class="container">
+        <Nuxt-link class="navbar-brand" to="/">
+            <Logo style="height:5vh" />
+        </Nuxt-link>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item active ">
+                    <Nuxt-link class="nav-link active" to="/">Home<span class="sr-only">(current)</span></Nuxt-link>
+                </li>
+                <li class="nav-item ">
+                    <Nuxt-link class="nav-link active" to="/about"> About</Nuxt-link>
+                </li>
+                <li class="nav-item ">
+                    <Nuxt-link class="nav-link active" to="/jokes"> Jokes</Nuxt-link>
+                </li>
+                <li class="nav-item">
+                    <Nuxt-link class="nav-link active" to="/contact"> Contact</Nuxt-link>
+                </li>
+            </ul>
+        </div>
     </div>
 </nav>
 </template>
